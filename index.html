@@ -16,23 +16,97 @@
      }        
     body{
              font-size: 28px;
-             background-color: #151515;
+             background-image: url(index/WebBG2.png);
     } 
+    a:link, a:visited {
+  color: red;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+    a:hover {
+    color:blue
+    }
     .yt-banner{
       background-color: white;
       margin: -10px;
     }
     .yt-profile{
-            margin-left: 10vw;
+		      	min-width: 600px;
+		      	width:80vw;
+		      	max-width: 1000px;
     }
+    .main-body{
+      min-width: 600px;
+		  max-width: 1000px;
+      margin-left: 10%;
+      margin-right: 10%;
+      background-color: #151515;
+      outline: solid;
+      outline-width: 10px;
+      outline-color: white;
+      
+    }
+    
+    .star {
+    position: fixed;
+    pointer-events: none;
+    color: gold;
+    font-size: 16px;
+    animation: sparkle 0.4s linear forwards;
+    text-shadow: 0 0 8px gold;
+}
+
+
+@keyframes sparkle {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -10px) scale(0) rotate(180deg);
+    }
+}
          </style>
   </head>
   <body>
+    <!-- ChatGPT written star cursor code :( -->
+<script>
+document.addEventListener("mousemove", (e) => {
+    const star = document.createElement("div");
+    star.className = "star";
+    star.textContent = "★";
+
+    star.style.left = e.clientX + "px";
+    star.style.top = e.clientY + "px";
+
+    // Random size
+    star.style.fontSize = (10 + Math.random() * 15) + "px";
+
+    // Random color
+    const colors = ["gold", "white", "#ff69b4", "#87cefa", "#ffff66"];
+    star.style.color = colors[Math.floor(Math.random() * colors.length)];
+
+    document.body.appendChild(star);
+
+    setTimeout(() => {
+        star.remove();
+    }, 800);
+});
+</script>
+
+
+
     <div class="yt-banner">
           <br>
-  	<img src="index/Web Banner.png" class="photo, yt-profile" alt="" width="80%">
+  	<center><img src="index/Web Banner.png" class="photo, yt-profile" alt=""></center>
     </div>
-    <p>McTry.github.io :D</p>
+<center>
+          <br>
+    <div class="main-body">
+    <p>Welcome to McTry.net, Im not sure how you found this place</p>
     <a href="https://www.youtube.com/@NotMcTry">Visit my YouTube</a>
+    </div>
+</center>
   </body>
 </html>
