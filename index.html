@@ -3,29 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The web site of mctry</title>
+    <title>McTry :D</title>
     <!-- The style.css file allows you to change the look of your web pages.
          If you include the next line in all your web pages, they will all share the same look.
          This makes it easier to make new pages for your site. -->
-         <style>
-    p {
-       font-family: 'Arial', sans-serif;
-       font-weight: bold;
-       color: white;
 
-     }        
+	<link rel="stylesheet" href="styleMain.css">
+
+         <style>  
     body{
-             font-size: 28px;
-             background-image: url(index/WebBG2.png);
+             background-image: url(index/WebBG.png);
     } 
-    a:link, a:visited {
-  color: red;
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-}
-    a:hover {
-    color:blue
-    }
     .yt-banner{
       background-color: white;
       margin: -10px;
@@ -35,78 +23,27 @@
 		      	width:80vw;
 		      	max-width: 1000px;
     }
-    .main-body{
-      min-width: 600px;
-		  max-width: 1000px;
-      margin-left: 10%;
-      margin-right: 10%;
-      background-color: #151515;
-      outline: solid;
-      outline-width: 10px;
-      outline-color: white;
-      
-    }
-    
-    .star {
-    position: fixed;
-    pointer-events: none;
-    color: gold;
-    font-size: 16px;
-    animation: sparkle 0.4s linear forwards;
-    text-shadow: 0 0 8px gold;
-}
 
-
-@keyframes sparkle {
-    0% {
-        opacity: 1;
-        transform: translate(-50%, -50%) scale(1) rotate(0deg);
-    }
-    100% {
-        opacity: 0;
-        transform: translate(-50%, -10px) scale(0) rotate(180deg);
-    }
-}
          </style>
   </head>
   <body>
-    <!-- ChatGPT written star cursor code :( -->
-<script>
-document.addEventListener("mousemove", (e) => {
-    const star = document.createElement("div");
-    star.className = "star";
-    star.textContent = "★";
-
-    star.style.left = e.clientX + "px";
-    star.style.top = e.clientY + "px";
-
-    // Random size
-    star.style.fontSize = (10 + Math.random() * 15) + "px";
-
-    // Random color
-    const colors = ["gold", "white", "#ff69b4", "#87cefa", "#ffff66"];
-    star.style.color = colors[Math.floor(Math.random() * colors.length)];
-
-    document.body.appendChild(star);
-
-    setTimeout(() => {
-        star.remove();
-    }, 800);
-});
-</script>
-
-
-
     <div class="yt-banner">
           <br>
-  	<center><img src="index/Web Banner.png" class="photo, yt-profile" alt=""></center>
+  	<center><img src="index/Web BannerYT.png" class="photo, yt-profile" alt=""></center>
     </div>
-<center>
+    <div class="dark">
           <br>
-    <div class="main-body">
-    <p>Welcome to McTry.net, Im not sure how you found this place</p>
-    <a href="https://www.youtube.com/@NotMcTry">Visit my YouTube</a>
+    <div class="section">
+
+      <p class="directory">
+        <a href="index.html">Home</a> / <a href="about.html">About</a> / <a href="photos.html">Photos</a>
+      </p>
+    <h1>Welcome!</h1>
+    <p>This is my corner of the internet, I called dibs.</p>
+    <h3>this is an h3 tag :D</h3>
+    <h2><a href="https://www.youtube.com/@NotMcTry" target="_blank">Visit my YouTube</a></h2>
+    <p>Look at all of those hits 😵 <script type="text/javascript" src="https://counter.websiteout.com/js/7/5/0/0"></script></p>
     </div>
-</center>
+  </div>
   </body>
 </html>
